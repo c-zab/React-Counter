@@ -2,17 +2,7 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
 
-	componentDidUpdate(prevProps, prevState) {
-		console.log("prevProps", prevProps)
-		console.log("prevState", prevState)
-	}
-
-	componentWillUnmount(){
-		console.log('Counter - Will Unmount');
-	}
-
 	render() {
-		console.log('Counter - Rendered');
 
 		return(
 			<div className='ui grid compact'>

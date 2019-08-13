@@ -3,7 +3,6 @@ import React from 'react';
 //Stateless Functional Component
 const Navbar = ({ total, totalProducts }) => {
 
-	console.log('Navbar - Rendered')
 	return (
 		<React.Fragment>
 			<div className="ui top fixed menu">

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Counter from './counter';
+import Counter from './Counter';
 
 class Counters extends Component {
-
 	render() {
-
-		const { onReset, onDelete, onIncrement, counters } = this.props
+		const { onReset, onDelete, onIncrement, counters } = this.props;
 		return (
 			<React.Fragment>
 				<div className="ui grid">

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
-
-	render() {
-
+  render() {
+    const {onIncrement, onDelete, counter} = this.props;
 		return(
 			<div className='ui grid compact'>
 				<div className="row">
@@ -15,14 +14,14 @@ class Counter extends Component {
 					<div className="column">
 						<button
 							className='ui primary button'
-							onClick={ () => this.props.onIncrement(this.props.counter) }>
+							onClick={ () => onIncrement(counter) }>
 								Increment
 						</button>
 					</div>
 					<div className="column">
 						<button
 							className='ui negative button'
-							onClick={ () => this.props.onDelete(this.props.counter.id) }>
+							onClick={ () => onDelete(counter.id) }>
 								Delete
 						</button>
 					</div>
@@ -33,8 +32,9 @@ class Counter extends Component {
 	}
 
 	getBadgeClasses() {
+    const {counter} = this.props;
 		let classes = "ui label ";
-		classes += this.props.counter.value === 0 ? 'red' : 'teal';
+		classes += counter.value === 0 ? 'red' : 'teal';
 		return classes;
 	}
 

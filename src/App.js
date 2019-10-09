@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from './components/navbar'
-import Counters from './components/counters';
+import Navbar from './components/Navbar'
+import Counters from './components/Counters';
 
 class App extends Component {
 	state = {
@@ -33,14 +33,14 @@ class App extends Component {
 	}
 
 	render() {
-
+    const {counters} = this.state;
 		return (
 			<React.Fragment>
 				<Navbar
-					totalProducts= {this.state.counters.filter(c => c.value > 0).length}
+					totalProducts={ counters.filter(c => c.value > 0).length }
 					total={ this.getTotal() }/>
 				<Counters
-					counters= {this.state.counters}
+					counters={counters}
 					onIncrement={this.handleIncrement}
 					onDelete={this.handleDelete}
 					onReset={this.handleReset}>

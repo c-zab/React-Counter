@@ -1,23 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Counter Application
 
-## Available Scripts
+A React application that displays and removes products. **In development adding Redux**
 
-In the project directory, you can run:
+## Requirements
 
-### `npm start`
+For development, you will only need Node.js installed on your environment.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Node
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+[Node](http://nodejs.org/) is really easy to install & now include [NPM](https://npmjs.org/).
+You should be able to run the following command after the installation procedure
+below.
 
-### `npm run build`
+    $ node --version
+    v10.16.3
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    $ npm --version
+    6.11.3
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Install
+
+    $ git clone https://github.com/c-zab/React-Counter-App.git
+    $ cd React-Counter-App
+    $ npm install
+
+## Start & watch
+
+    $ npm start
+
+## Simple build for production
+
+    $ npm run build
+
+---
+
+## Languages & tools
+
+### JavaScript
+
+- [React](http://facebook.github.io/react) is used for UI.
+- [create-react-app](https://github.com/facebook/create-react-app) creates a React app with no build configuration.
+
+---
+
+## Author
+
+Carlos Zabaleta | [website](http://czabalet.com/)
